@@ -1,0 +1,9 @@
+C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\bin\Debug\JewelryManagement.Service.dll
+C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\bin\Debug\JewelryManagement.Service.pdb
+C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\bin\Debug\JewelryManagement.Model.dll
+C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\bin\Debug\JewelryManagement.Model.pdb
+C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.csproj.AssemblyReference.cache
+C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.csproj.CoreCompileInputs.cache
+C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.csproj.CopyComplete
+C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.dll
+C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.pdb
