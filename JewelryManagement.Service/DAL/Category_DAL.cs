@@ -12,15 +12,18 @@ namespace JewelryManagement.Service.DAL
 {
     public class Category_DAL
     {
+        private readonly string _connectionString;
+
+        public Category_DAL()
+        {
+            _connectionString = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+        }
         public string InsertCategory(string name)
         {
-            string ss = ConfigurationManager.ConnectionStrings["DBdetails"].ConnectionString;
-            string result = "";
-            const string connectionString =
-                "Data Source = xxx;Database=xxx;User ID=xxx;Password=xxx";
+            string result = string.Empty;
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
                     SqlCommand command = new SqlCommand("InsertCategory", connection);
                     connection.Open();
@@ -40,13 +43,11 @@ namespace JewelryManagement.Service.DAL
         public Category GetCategoryById(int id)
         {
             
-            Category catObj = new Category();
-          
-            const string connectionString =
-                "Data Source = xxx;Database=xxx;User ID=xxx;Password=xxx";
+            Category catObj = new Category();          
+            
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
                     SqlCommand command = new SqlCommand("GetCategoryById", connection);
                     connection.Open();
@@ -75,11 +76,10 @@ namespace JewelryManagement.Service.DAL
         {
 
             List<Category> categoryList = new List<Category>();
-            const string connectionString =
-                "Data Source = xxx;Database=xxx;User ID=xxx;Password=xxx";
+          
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
                     SqlCommand command = new SqlCommand("GetAllCategory", connection);
                     connection.Open();
@@ -109,11 +109,10 @@ namespace JewelryManagement.Service.DAL
         {
 
             int result = 0;
-            const string connectionString =
-                "Data Source = xxx;Database=xxx;User ID=xxx;Password=xxx";
+          
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
                     SqlCommand command = new SqlCommand("UpdateCategory", connection);
                     connection.Open();
@@ -136,11 +135,10 @@ namespace JewelryManagement.Service.DAL
         {
 
             int result = 0;
-            const string connectionString =
-                "Data Source = xxx;Database=xxx;User ID=xxx;Password=xxx";
+          
             try
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
                     SqlCommand command = new SqlCommand("DeleteCategory", connection);
                     connection.Open();
