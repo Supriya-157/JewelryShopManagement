@@ -1,0 +1,9 @@
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.DBO\bin\Debug\JewelryManagement.DBO.dacpac
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.DBO\obj\Debug\Model.xml
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.DBO\obj\Debug\refactor.xml
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.DBO\obj\Debug\postdeploy.sql
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.DBO\obj\Debug\predeploy.sql
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.DBO\obj\Debug\JewelryManagement.DBO.dll
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.DBO\obj\Debug\JewelryManagement.DBO.pdb
+C:\Users\Anil.K\source\repos\JewelryShopManagement\JewelryManagement.DBO\bin\Debug\JewelryManagement.DBO.dll
+C:\Users\Anil.K\source\repos\JewelryShopManagement\JewelryManagement.DBO\bin\Debug\JewelryManagement.DBO.pdb

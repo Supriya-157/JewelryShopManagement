@@ -7,3 +7,12 @@ C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\obj\
 C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.csproj.CopyComplete
 C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.dll
 C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.pdb
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Service\bin\Debug\JewelryManagement.Service.dll
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Service\bin\Debug\JewelryManagement.Service.pdb
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Service\bin\Debug\JewelryManagement.Model.dll
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Service\bin\Debug\JewelryManagement.Model.pdb
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.csproj.AssemblyReference.cache
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.csproj.CoreCompileInputs.cache
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.csproj.CopyComplete
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.dll
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Service\obj\Debug\JewelryManagement.Service.pdb

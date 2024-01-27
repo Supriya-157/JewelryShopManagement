@@ -3,3 +3,8 @@ C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Model\bin\De
 C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Model\obj\Debug\JewelryManagement.Model.csproj.CoreCompileInputs.cache
 C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Model\obj\Debug\JewelryManagement.Model.dll
 C:\Users\Priya\source\repos\JewelryShopManagement\JewelryManagement.Model\obj\Debug\JewelryManagement.Model.pdb
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Model\bin\Debug\JewelryManagement.Model.dll
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Model\bin\Debug\JewelryManagement.Model.pdb
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Model\obj\Debug\JewelryManagement.Model.csproj.CoreCompileInputs.cache
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Model\obj\Debug\JewelryManagement.Model.dll
+C:\Users\Anil.K\Source\Repos\JewelryShopManagement\JewelryManagement.Model\obj\Debug\JewelryManagement.Model.pdb
