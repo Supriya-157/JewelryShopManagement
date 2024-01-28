@@ -1,0 +1,20 @@
+.example-container {
+    width: 100%;
+    margin: 10px;
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    
+  }
+
+  .side-nav{
+    min-width: 250px;
+  }
+  .menu-ul{
+    list-style-type: none;
+  }
+
+  .menu-ul li{
+    padding: 10px;
+  }
