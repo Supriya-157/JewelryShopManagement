@@ -1,0 +1,157 @@
+.comment-style {
+    text-align: left;
+    font: normal normal bold 19px/12px EYInterstate !important;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.comment-area-style {
+    width: 100%;
+    height: 40px;
+    /* background-color: #000000; */
+    background: #00000075;
+    color: #FFFFFF;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px #747480 solid;
+    font: normal normal 300 16px/12px EYInterstate !important;
+    line-height: 20px !important;
+    height: 100px;
+    resize: none;
+    outline: none;
+}
+
+.comment-area-style:focus {
+    outline: none !important;
+}
+
+.comments-head {
+    font: normal normal 300 17px/32px EYInterstate !important;
+    padding-top: 1%;
+}
+
+.mandatory-style {
+    text-align: left;
+    font: normal normal bold 16px/12px EYInterstate !important;
+    letter-spacing: 0px;
+    color: #FF4136;
+    opacity: 1;
+}
+
+.content .message {
+    font: normal normal normal 16px/24px EYInterstate !important;
+    margin-bottom: 5px !important;
+}
+
+.label-style {
+    font: normal normal bold 16px/17px EYInterstate !important;
+    margin-bottom: 15px;
+}
+
+.cancelConfirm .title {
+    font: normal normal normal 20px/24px EYInterstate !important
+}
+
+.cancelConfirm .content {
+    border-bottom: none !important;
+}
+
+.cancelConfirm .error-style {
+    font-size: 14px !important;
+    font-weight: 300;
+}
+
+@media (max-width: 1280px) {
+    .content .message {
+        font: normal normal normal 14px/24px EYInterstate !important;
+        margin-bottom: 5px !important;
+    }
+
+    .label-style {
+        font: normal normal bold 14px/17px EYInterstate !important;
+        margin-bottom: 15px;
+    }
+
+    .cancelConfirm .title {
+        font: normal normal normal 18px/24px EYInterstate !important
+    }
+
+    .comment-area-style {
+        font-size: 14px !important;
+    }
+}
+
+/*Reason for Cancellation dropdown start*/
+.drop-form-div-style {
+    background: #00000065;
+}
+
+::ng-deep .mat-form-field-infix {
+    margin-top: -10px !important;
+}
+
+.drop-matfield-style {
+    height: 41px !important;
+    top: 0% !important;
+    bottom: 0% !important;
+    background: transparent !important;
+    width: 100%;
+    color: #ffffff;
+    border-bottom: 1px #565761 solid;
+}
+
+.drop-mat-select-style {
+    padding-left: 5%;
+    text-align: left;
+    font: normal normal 300 16px/12px EYInterstate;
+    letter-spacing: 0px;
+    color: #2E2E38;
+    opacity: 1;
+    background: transparent !important;
+}
+
+.drop-mat-option-style {
+    background-color: #2E2E38 !important;
+    color: #FFFFFF !important;
+    left: 0px !important;
+    border-radius: 0px !important;
+    border: none !important;
+    text-align: left;
+    font: normal normal 300 16px/12px EYInterstate;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.drop-mat-option-style:hover {
+    background-color: #000000 !important;
+    color: #FFE600 !important;
+    left: 0px !important;
+    border-radius: 0px !important;
+    border: none !important;
+    text-align: left;
+    font: normal normal 300 16px/12px EYInterstate;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.drop-mat-error {
+    margin-top: -1px;
+}
+
+.comments-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-icon-style {
+    width: 17px !important;
+    margin-bottom: 7px;
+}
+
+.textarea-div {
+    margin-top: 30px;
+}
+
+/*Reason for Cancellation dropdown end */

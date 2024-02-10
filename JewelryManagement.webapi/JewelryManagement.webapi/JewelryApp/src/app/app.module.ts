@@ -9,12 +9,22 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { CategoryComponent } from './category/category.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { CategoryService } from './category/category.service';
+import { HttpClientModule } from '@angular/common/http';
+import {MatButtonModule} from '@angular/material/button';
+import { DialogComponentComponent } from './shared/components/dialog-component/dialog-component.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SideNavComponent,
-    CategoryComponent
+    CategoryComponent,
+    DialogComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -22,9 +32,14 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatTableModule, 
-    MatPaginatorModule
+    MatPaginatorModule,
+    HttpClientModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatDialogModule,
+    MatDividerModule
   ],
-  providers: [],
+  providers: [CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
