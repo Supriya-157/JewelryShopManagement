@@ -1,0 +1,54 @@
+
+<div class="container p-3">
+    <div class="row" mat-dialog-title>
+        {{data.title}} 
+        <button type="button" class="close">
+            <span class="modal-close">&times;</span>
+        </button>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="row" mat-dialog-content>
+        <!-- <mat-grid-list cols="6" rowHeight="100px">
+            <mat-grid-tile
+            colspan="3"
+            [rowspan]="tile.rows"
+            [style.background]="tile.color">
+        
+            </mat-grid-tile>
+        </mat-grid-list> -->
+
+        <div class="row" >
+            <div class="col-md-12">
+            <div class="col-md-6">
+                Name
+            </div>
+            <div class="col-md-6">
+                <input  (ngModel)= "data.item" [readonly]="data.isUpdate"/>
+            </div>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    Status
+                </div>
+                <div class="col-md-6">
+                    <mat-checkbox [checked]="data.isActive"></mat-checkbox>
+                </div>
+            </div>
+        </div>      
+    </div>
+    <mat-divider></mat-divider>
+    <div class="row" mat-dialog-actions >
+        <button type="button" mat-raised-button class="btn btn-outline-warning">
+            Cancel
+        </button>
+        <button type="button" mat-raised-button color="primary" class="btn btn-outline-warning" *ngIf="data.isUpdate">
+            Update
+        </button>
+        <button type="button" mat-raised-button color="primary" class="btn btn-outline-warning" *ngIf="!data.isUpdate">
+            Add
+        </button>
+    </div>
+    
+</div>

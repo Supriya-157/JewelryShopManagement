@@ -16,7 +16,7 @@ namespace JewelryManagement.Service.DAL
 
         public Category_DAL()
         {
-            _connectionString = ConfigurationManager.ConnectionStrings[0].ConnectionString;
+            _connectionString = "Data Source = localhost\\SQLEXPRESS ; Initial Catalog = JewelryManagement;Integrated Security=true; ";// ConfigurationManager.ConnectionStrings[0].ConnectionString;
         }
         public string InsertCategory(string name)
         {
@@ -29,6 +29,7 @@ namespace JewelryManagement.Service.DAL
                     connection.Open();
 
                     command.Parameters.AddWithValue("@Name", name);
+                    command.CommandType = CommandType.StoredProcedure;
                     result = Convert.ToString(command.ExecuteScalar());
 
                 }
@@ -53,6 +54,7 @@ namespace JewelryManagement.Service.DAL
                     connection.Open();
 
                     command.Parameters.AddWithValue("@Id", id);
+                    command.CommandType = CommandType.StoredProcedure;
                     SqlDataReader reader = command.ExecuteReader();
 
                     while (reader.Read())
@@ -83,7 +85,7 @@ namespace JewelryManagement.Service.DAL
                 {
                     SqlCommand command = new SqlCommand("GetAllCategory", connection);
                     connection.Open();
-
+                    command.CommandType = CommandType.StoredProcedure;
                     SqlDataReader reader = command.ExecuteReader();
 
                     while (reader.Read())
@@ -115,6 +117,7 @@ namespace JewelryManagement.Service.DAL
                 using (SqlConnection connection = new SqlConnection(_connectionString))
                 {
                     SqlCommand command = new SqlCommand("UpdateCategory", connection);
+                    command.CommandType = CommandType.StoredProcedure;
                     connection.Open();
                     command.Parameters.AddWithValue("@Id",id);
                     command.Parameters.AddWithValue("@IsActive",isActive);
@@ -142,6 +145,7 @@ namespace JewelryManagement.Service.DAL
                 {
                     SqlCommand command = new SqlCommand("DeleteCategory", connection);
                     connection.Open();
+                    command.CommandType = CommandType.StoredProcedure;
 
                     command.Parameters.AddWithValue("@Id", id);
                     result = command.ExecuteNonQuery();
