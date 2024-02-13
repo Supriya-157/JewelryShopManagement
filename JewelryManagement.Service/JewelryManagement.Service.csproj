@@ -46,7 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BAL\Category_BAL.cs" />
+    <Compile Include="BAL\Product_BAL.cs" />
     <Compile Include="DAL\Category_DAL.cs" />
+    <Compile Include="DAL\Product_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

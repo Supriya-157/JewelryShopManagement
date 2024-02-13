@@ -16,6 +16,8 @@ import { DialogComponentComponent } from './shared/components/dialog-component/d
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
+import { ProductComponent } from './product/product.component';
+import { ProductService } from './product/product.service';
 
 
 
@@ -24,7 +26,8 @@ import { MatDividerModule } from '@angular/material/divider';
     AppComponent,
     SideNavComponent,
     CategoryComponent,
-    DialogComponentComponent
+    DialogComponentComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatDialogModule,
     MatDividerModule
   ],
-  providers: [CategoryService],
+  providers: [CategoryService,ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
