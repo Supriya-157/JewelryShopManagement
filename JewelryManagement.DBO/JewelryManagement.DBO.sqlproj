@@ -67,5 +67,12 @@
     <Build Include="dbo\StoredProcedures\InsertCategory.sql" />
     <Build Include="dbo\StoredProcedures\UpdateCategory.sql" />
     <Build Include="dbo\Tables\Category.sql" />
+    <Build Include="dbo\Tables\Product.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\StoredProcedures\DeleteProduct.sql" />
+    <None Include="dbo\StoredProcedures\GetAllProduct.sql" />
+    <None Include="dbo\StoredProcedures\GetProductbyid.sql" />
+    <None Include="dbo\StoredProcedures\InsertProduct.sql" />
   </ItemGroup>
 </Project>
