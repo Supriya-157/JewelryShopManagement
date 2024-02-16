@@ -12,10 +12,12 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { CategoryService } from './category/category.service';
 import { HttpClientModule } from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
-import { DialogComponentComponent } from './shared/components/dialog-component/dialog-component.component';
+import { DialogComponent } from './shared/components/dialog/dialog.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { NewCategoryComponent } from './category/new-category/new-category.component';
 
 
 
@@ -24,7 +26,8 @@ import { MatDividerModule } from '@angular/material/divider';
     AppComponent,
     SideNavComponent,
     CategoryComponent,
-    DialogComponentComponent
+    DialogComponent,
+    NewCategoryComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatButtonModule,
     MatCheckboxModule,
     MatDialogModule,
-    MatDividerModule
+    MatDividerModule,
+    MatIconModule
   ],
   providers: [CategoryService],
   bootstrap: [AppComponent]

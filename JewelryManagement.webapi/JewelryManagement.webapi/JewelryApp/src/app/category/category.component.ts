@@ -4,7 +4,9 @@ import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { Router } from '@angular/router';
 import { CategoryService } from './category.service';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogComponentComponent } from '../shared/components/dialog-component/dialog-component.component';
+import { DialogComponent } from '../shared/components/dialog/dialog.component';
+import { take } from 'rxjs';
+import { NewCategoryComponent } from './new-category/new-category.component';
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
@@ -35,21 +37,41 @@ export class CategoryComponent implements AfterViewInit{
   }
 
   onEdit(e:any,id:any){
+
+    const defaultValues: any = {
+      width: '450px',
+      disableClose: false,
+      data: { showActionBtn: true, text: "Edit Category" }
+  };
+
+  
+
+
+
     e.preventDefault();
     this._categoryService.getById(id).subscribe((result)=>{
       console.log(result);
-      this.dialog.open(DialogComponentComponent, {
-        data: {
-          isUpdate:true,
-          title:"Update Category",
-          item:result.Name,
-          isActive:result.IsActive
-        },
-        panelClass: 'custom-modalbox',
-        width: '60%',
-        height: '60%',
-        position: { top: '5%' }
-      });
+      const dialogRef = this.dialog.open(NewCategoryComponent, defaultValues);
+
+      dialogRef
+                .afterClosed()
+                .pipe(take(1))
+                .subscribe(data => {
+                    console.log(data);
+                });
+
+      // this.dialog.open(DialogComponent, {
+      //   data: {
+      //     isUpdate:true,
+      //     title:"Update Category",
+      //     item:result.Name,
+      //     isActive:result.IsActive
+      //   },
+      //   panelClass: 'custom-modalbox',
+      //   width: '60%',
+      //   height: '60%',
+      //   position: { top: '5%' }
+      // });
     })
   }
 }
