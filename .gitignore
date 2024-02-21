@@ -79,3 +79,5 @@ bld/
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
 node_modules/	
+*.suo
+/JewelryManagement.webapi/.vs/JewelryManagement.webapi/FileContentIndex
