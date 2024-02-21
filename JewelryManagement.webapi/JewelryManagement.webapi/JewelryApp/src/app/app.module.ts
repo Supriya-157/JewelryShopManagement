@@ -26,6 +26,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import { AppCommonService } from './shared/services/app-common.service';
+import { ProductComponent } from './product/product.component';
+import { ProductService } from './product/product.service';
 
 const MATERIAL_MODULES = [
   MatSidenavModule,
@@ -46,7 +48,7 @@ const MATERIAL_MODULES = [
     CategoryComponent,
     DialogComponent,
     NewCategoryComponent,
-    
+    ProductComponent
    // ...MATERIAL_MODULES,
   ],
   
@@ -67,7 +69,7 @@ const MATERIAL_MODULES = [
   FormsModule,ReactiveFormsModule,
   MatGridListModule,MatFormFieldModule,MatInputModule
   ],
-  providers: [CategoryService,PopupDialogService,SnackBarService,AppCommonService],
+    providers: [CategoryService, PopupDialogService, SnackBarService, AppCommonService, ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
