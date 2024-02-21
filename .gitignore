@@ -7,3 +7,19 @@
 /JewelryManagement.DBO/JewelryManagement.DBO.dbmdl
 /JewelryManagement.DBO/JewelryManagement.DBO.jfm
 /JewelryManagement.webapi/JewelryManagement.webapi/bin/
+bin/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+/JewelryManagement.webapi/.vs/JewelryManagement.webapi/FileContentIndex
+*.suo
