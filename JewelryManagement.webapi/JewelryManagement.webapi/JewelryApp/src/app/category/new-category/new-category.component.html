@@ -1,1 +1,31 @@
-<p>new-category works!</p>
+<ng-container *ngIf="!categoryForm.Id || isCategoryEditMode; then addEditCategory; else categorySummary">
+</ng-container>
+
+<ng-template #addEditCategory>
+    <div class="category-form-container">
+        <div class="category-form-content">
+          <form [formGroup]="formGroup">
+            <mat-grid-list cols="2" rowHeight="85px">
+                <input type="hidden" formControlName="Id" />
+                <mat-grid-tile class="category-name">
+                  <div class="text-inside">
+                    <mat-form-field>
+                      <input matInput  formControlName="Name" required />
+                      <!-- <mat-error *ngIf="formGroup.controls['categoryName'].hasError('required')">
+                        Please enter Source Field Name
+                      </mat-error> -->
+                    </mat-form-field>
+                  </div>
+                </mat-grid-tile>
+                <mat-grid-tile>   
+                   <mat-checkbox formControlName="IsActive" class="example-margin">Is Active</mat-checkbox>
+                </mat-grid-tile>
+            </mat-grid-list>
+          </form>
+        </div>
+    </div>
+</ng-template>
+
+<ng-template #categorySummary>
+
+</ng-template>

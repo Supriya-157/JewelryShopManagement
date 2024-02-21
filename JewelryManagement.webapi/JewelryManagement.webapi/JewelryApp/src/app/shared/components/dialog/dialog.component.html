@@ -2,7 +2,6 @@
 <span class="dialog-close-icon">
   <mat-icon class="fa fa-close" (click)="onCancelClick()"></mat-icon>
 </span>
-
 <div class="dialog-title-divider mt-3" *ngIf="dialogData.showDivider">
     <mat-divider></mat-divider>
 </div>
@@ -13,18 +12,9 @@
 
 <!-- Save and Edit Button, Toggle based on new form or To edit existing form -->
 <mat-dialog-actions *ngIf="dialogData.showActionBtn">
-
-    <!-- <ng-container *ngIf="!isEditButton; else showEditButton">
-        <button mat-raised-button type="submit" color="primary" (click)="onSaveClick()">{{!componentRef.instance.isSaveAndExit ? dialogData.saveBtnLabel : dialogData.saveAndExitBtnLabel}}</button>
-
-        <button *ngIf="componentRef.instance.isShowSaveAndAddAnother" mat-raised-button type="submit" color="primary" (click)="onSaveAndAddAnotherClick()">
-      {{dialogData.saveAndAddAnotherLabel}}</button>
+     <ng-container >
+        <button mat-raised-button type="submit" color="primary" (click)="onSaveClick()">{{dialogData.saveBtnLabel }}</button>
     </ng-container>
-
-    <ng-template #showEditButton>
-        <button mat-raised-button type="submit" color="primary" [disabled]="dialogData.isEditButtonDisable" (click)="onEditClick()" cdkFocusInitial>{{dialogData.editBtnLabel}}</button>
-    </ng-template> -->
-
 </mat-dialog-actions>
 
 

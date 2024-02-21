@@ -16,5 +16,9 @@ export class CategoryService {
   public getById(id:any): Observable<any> {
     return this.http.get(API_URL + '/api/' + "Category/" + id);
   }
+
+  public updateCategory(categoryId:any, categoryIsActive:boolean): Observable<any> {
+    return this.http.post(API_URL + '/api/' + "Category" ,{ id:categoryId, isActive:categoryIsActive});
+  }
   }
 // /api/users

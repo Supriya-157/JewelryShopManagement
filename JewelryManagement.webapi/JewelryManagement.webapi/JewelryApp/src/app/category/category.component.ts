@@ -7,6 +7,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../shared/components/dialog/dialog.component';
 import { take } from 'rxjs';
 import { NewCategoryComponent } from './new-category/new-category.component';
+import { PopupDialogService } from '../shared/services/popup.service';
+import { AppCommonService } from '../shared/services/app-common.service';
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
@@ -17,7 +19,8 @@ export class CategoryComponent implements AfterViewInit{
   displayedColumns: string[] = [ 'name', 'isActive', 'createdDate','edit','delete'];
   dataSource:any;
 
-  constructor(private router: Router, private _categoryService:CategoryService,private dialog: MatDialog){
+  constructor(private router: Router, private _categoryService:CategoryService,
+    private dialog: MatDialog,  private readonly popupService: PopupDialogService,private readonly appService: AppCommonService,){
     
   }
 
@@ -36,44 +39,44 @@ export class CategoryComponent implements AfterViewInit{
 
   }
 
-  onEdit(e:any,id:any){
+  onEdit(e:any,item:any){
+
+    this.appService.setFormState(true);
+
+    this.appService.setFormData(item);
 
     const defaultValues: any = {
       width: '450px',
       disableClose: false,
-      data: { showActionBtn: true, text: "Edit Category" }
+      data: { showActionBtn: true, text: "Edit Category",saveBtnLabel:"Save",showDivider:true }
   };
 
   
-
-
-
     e.preventDefault();
-    this._categoryService.getById(id).subscribe((result)=>{
-      console.log(result);
-      const dialogRef = this.dialog.open(NewCategoryComponent, defaultValues);
 
-      dialogRef
-                .afterClosed()
-                .pipe(take(1))
-                .subscribe(data => {
-                    console.log(data);
-                });
+    const dialogSettings = {
+      data: {
+          component: NewCategoryComponent,
+          title: 'Category Information',
+          showEditButton: false,
+          showActionBtn: true,
+          showDivider: true,
+          showHeaderTitle: true,
+          editBtnLabel: 'Edit',
+          saveBtnLabel: 'Save',
+          saveAndExitBtnLabel: 'Save and Exit',
+          saveAndAddAnotherLabel: 'Save and Add Another',
+          isEditButtonDisable: false,
+        
+      }
+  };
+  
+  this.popupService.openConfirmationDialog(DialogComponent, dialogSettings, undefined, false, true);
 
-      // this.dialog.open(DialogComponent, {
-      //   data: {
-      //     isUpdate:true,
-      //     title:"Update Category",
-      //     item:result.Name,
-      //     isActive:result.IsActive
-      //   },
-      //   panelClass: 'custom-modalbox',
-      //   width: '60%',
-      //   height: '60%',
-      //   position: { top: '5%' }
-      // });
-    })
+   
   }
+
+
 }
 export interface CategoryElement {
   Name: string;
